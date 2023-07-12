@@ -7,6 +7,7 @@
     border-radius: 20px;
 }
 :root {
+    --blue: hsl(246, 80%, 60%);
     --verydarkblue: hsl(226, 43%, 10%);
     --darkblue: hsl(235, 46%, 20%);
     --desatblue: hsl(235, 45%, 61%);
@@ -53,6 +54,21 @@ body {
     .container {
         display: block;
     }
+    .container #jeremy {
+        background-color: var(--blue);
+    }
+    .container .j1 {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .container .j1 #jeremy-img {
+        width: 20%;
+        display: inline-block;
+    }
+    .container .j1 .jpara .jere {
+        display: block;
+    }
 }
 @media only screen and (min-width: 900px) {
     body {
@@ -66,7 +82,7 @@ body {
     .container #jeremy {
         width: 18vw;
         height: 80vh;
-        background-color: hsl(235, 46%, 20%);
+        background-color: var(--blue);
         margin-left: auto;
     }
     .container #jeremy .j1 {
@@ -131,7 +147,7 @@ body {
         background-color: rgb(153, 95, 9);
         padding: 0;
     }
-    .container .boxes .row .col-1:hover, .container .boxes .row .col-1:focus {
+    .container .boxes .row .col:hover, .container .boxes .row .col:focus {
         cursor: pointer;
     }
     .container .boxes .row .col-1 .wrk {
