@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Rubik:wght@300;400;500&family=Ubuntu:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 20px;
+}
+:root {
+    --verydarkblue: hsl(226, 43%, 10%);
+    --darkblue: hsl(235, 46%, 20%);
+    --desatblue: hsl(235, 45%, 61%);
+    --paleblue: hsl(236, 100%, 87%);
+    --box-height: 38vh;
+    --box-width: 18vw;
+}
+body {
+    background-color: var(--verydarkblue);
+}
+.container {
+    width: 90%;
+    max-height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+.container #jeremy {
+    background-color: var(--desatblue);
+}
+.container #jeremy-img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.container .boxes .row .col-1 {
+    background-image: url(./images/icon-work.svg);
+}
+.container .boxes .row .col-2 {
+    background-image: url(./images/icon-play.svg);
+}
+.container .boxes .row .col-3 {
+    background-image: url(./images/icon-study.svg);
+}
+.container .boxes .row .col-4 {
+    background-image: url(./images/icon-exercise.svg);
+}
+.container .boxes .row .col-5 {
+    background-image: url(./images/icon-social.svg);
+}
+.container .boxes .row .col-6 {
+    background-image: url(./images/icon-self-care.svg);
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
+}
+@media only screen and (min-width: 900px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        margin-top: 15vh;
+    }
+    .container #jeremy {
+        width: 18vw;
+        height: 80vh;
+        background-color: hsl(235, 46%, 20%);
+        margin-left: auto;
+    }
+    .container #jeremy .j1 {
+        width: 18vw;
+        height: 70%;
+        background-color: hsl(235, 45%, 61%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .container .j1 #jeremy-img {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        width: 8vw;
+    }
+    .container #jeremy .j1 .jpara {
+        font-weight: 300;
+        color: #fff;
+        position: relative;
+        left: 20px;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+    .container #jeremy .j1 div {
+        color: #fff;
+        position: relative;
+        left: 20px;
+        padding-top: 16px;
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+    .container #jeremy .j2 {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .container #jeremy .j2 .list-item {
+        margin-bottom: 15px;
+    }
+    .container #jeremy .j2 .link {
+        padding: 20px;
+        text-decoration: none;
+        color: hsl(236, 100%, 87%);
+    }
+    .container #jeremy .j2 .link:hover, .container #jeremy .j2 .link:focus {
+        color: #fff;
+    }
+    .container .boxes {
+        margin-right: auto;
+    }
+    .container .boxes .row {
+        display: flex;
+    }
+    .container .boxes .row .col {
+        height: var(--box-height);
+        width: var(--box-width);
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container .boxes .row .col-1 {
+        background-color: rgb(153, 95, 9);
+        padding: 0;
+    }
+    .container .boxes .row .col-1:hover, .container .boxes .row .col-1:focus {
+        cursor: pointer;
+    }
+    .container .boxes .row .col-1 .wrk {
+        width: 100%;
+        height: 85%;
+        position: relative;
+        bottom: -40px;  
+        border-radius: 15px;
+        background-color: var(--darkblue);
+        color: #fff;
+        font-weight: lighter;
+    }
+    .boxes .panel {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        font-weight: 500;
+
+    }
+    .boxes .panel .p2 {
+        color: hsl(236, 100%, 87%);
+    }
+    .boxes .panel .p2:hover, .boxes .panel .p2:focus {
+        cursor: pointer;
+        color: #fff;
+        transform: scale(1.5);
+        font-weight: 700;
+    }
+    .boxes .panel-menu {
+        padding-left: 20px;
+    }
+    .boxes #panel-menu1 {
+        font-size: 3.5rem;
+    }
+    .boxes #panel-menu2 {
+        font-size: 1rem;
+        margin-top: 10px;
+        color: hsl(236, 100%, 87%);
+    }
+    .boxes #panel-menu2:hover, .boxes #panel-menu2:focus {
+        cursor: pointer;
+        color: #fff;
+    }
+}
