@@ -143,29 +143,50 @@ body {
         margin: 10px;
         padding: 10px;
     }
+    .container .boxes .row .wrk:hover, .container .boxes .row .wrk:focus {
+        background-color: hsl(235, 45%, 61%);
+    }
     .container .boxes .row .col-1 {
-        background-color: rgb(153, 95, 9);
+        background-color: hsl(15, 100%, 70%);
         padding: 0;
     }
     .container .boxes .row .col:hover, .container .boxes .row .col:focus {
         cursor: pointer;
     }
-    .container .boxes .row .col-1 .wrk {
-        width: 100%;
+    .container .boxes .wrk {
+        width: inherit;
         height: 85%;
         position: relative;
         bottom: -40px;  
-        border-radius: 15px;
         background-color: var(--darkblue);
         color: #fff;
         font-weight: lighter;
+    }
+    .container .boxes .row .col-2 {
+        background-color: hsl(195, 74%, 62%);
+        padding: 0;
+    }
+    .container .boxes .row .col-3 {
+        background-color: hsl(348, 100%, 68%);
+        padding: 0;
+    }
+    .container .boxes .row .col-4 {
+        background-color: hsl(145, 58%, 55%);
+        padding: 0;
+    }
+    .container .boxes .row .col-5 {
+        background-color: hsl(264, 64%, 52%);
+        padding: 0;
+    }
+    .container .boxes .row .col-6 {
+        background-color: hsl(43, 84%, 65%);
+        padding: 0;
     }
     .boxes .panel {
         display: flex;
         justify-content: space-between;
         padding: 25px;
         font-weight: 500;
-
     }
     .boxes .panel .p2 {
         color: hsl(236, 100%, 87%);
@@ -179,10 +200,10 @@ body {
     .boxes .panel-menu {
         padding-left: 20px;
     }
-    .boxes #panel-menu1 {
+    .boxes .wrk .panel-menu1 {
         font-size: 3.5rem;
     }
-    .boxes #panel-menu2 {
+    .boxes .wrk .panel-menu2 {
         font-size: 1rem;
         margin-top: 10px;
         color: hsl(236, 100%, 87%);
